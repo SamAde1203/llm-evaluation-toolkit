@@ -178,7 +178,7 @@ output:
 
 🧠 System Architecture
 
-![Architecture](docs/images/architecture.png)
+![Project Structure](docs/images/project_structure.png)
 
 📈 Sample Output
 Console Summary
