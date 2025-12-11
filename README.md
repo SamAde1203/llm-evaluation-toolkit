@@ -178,8 +178,6 @@ output:
 
 🧠 System Architecture
 
-(Replace the placeholder path with your actual architecture image)
-
 ![Architecture](docs/images/architecture.png)
 
 📈 Sample Output
