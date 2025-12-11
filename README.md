@@ -1,75 +1,84 @@
-🧠 LLM Evaluation Toolkit
-
+# 🧠 LLM Evaluation Toolkit
 
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code Style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-A modular, extensible, production-grade framework for evaluating Large Language Model (LLM) outputs with reproducible metrics, configurable pipelines, and automated reporting.
 
 
-🚀 Overview
 
-Evaluating LLM outputs consistently is still one of the most difficult challenges in AI development.
-Different models hallucinate, paraphrase, compress, omit details — and standard metrics alone (BLEU/ROUGE) cannot capture the nuance of quality.
 
-The LLM Evaluation Toolkit provides a reproducible, multi-metric, fully configurable evaluation system for:
 
-LLM researchers
 
-AI safety teams
 
-ML engineers
 
-Product teams validating AI features
 
-Anyone benchmarking GPT, Claude, Gemini, or custom models
 
-It is modular, metrics-driven, and built for real-world usage.
+A modular, extensible, and reproducible framework for evaluating Large Language Models (LLMs) using multiple metrics, configurable pipelines, and automated reporting — built for AI researchers, ML engineers, AI safety teams, and product teams who require reliable evaluation at scale.
 
-✨ Key Features
+🚀 Why This Toolkit?
 
-Multi-Metric Evaluation
+Evaluating LLM outputs is one of the hardest problems in AI:
+
+Different LLMs hallucinate, paraphrase, compress, or omit details
+
+Classic metrics like BLEU/ROUGE fail to capture meaning
+
+Different evaluators produce inconsistent results
+
+Teams often rely on ad-hoc scripts that cannot be reproduced
+
+The LLM Evaluation Toolkit provides:
+
+✔ A standardised evaluation pipeline
+✔ Multiple metrics for semantic + factual evaluation
+✔ Full YAML-based configuration
+✔ Detailed Markdown reports + visualisations
+✔ Reproducible scoring logic suitable for research and production
+✔ Lightweight integration with any LLM (GPT-4/Claude/Gemini/Llama/etc.)
+
+This is the kind of framework used internally by OpenAI, Anthropic, DeepMind, Scale AI, and research labs — now available in an open-source form.
+
+✨ Features
+🔍 Multi-Metric Evaluation
 
 Exact Match
 
-Fuzzy Matching
+Fuzzy Matching (Levenshtein-based)
 
 Keyword Coverage
 
-Semantic Similarity (Sentence Transformers)
+Semantic Similarity (SentenceTransformers embeddings)
 
-Configurable Pipelines via YAML/JSON
+⚙️ Configurable Pipeline
 
-Batch Evaluation
+YAML/JSON configs
 
-Automatic Report Generation (Markdown + charts)
+Adjustable metric weights
 
-Extensible Architecture — add your own metrics in minutes
+Threshold controls
 
-Synthetic Dataset Generation for testing workflows
+Model selection for semantic similarity
 
-Research-ready and production-friendly
+📊 Automated Report Generation
 
-🧭 Why This Toolkit Matters
+Markdown reports
 
-Most teams evaluating LLMs end up with:
+Score breakdowns
 
-❌ inconsistent results
-❌ ad-hoc scripts
-❌ no reproducibility
-❌ different evaluators producing different judgments
+Metric summaries
 
-This toolkit solves that by providing:
+Visualisations (heatmaps, score histograms, etc.)
 
-✔ A standard evaluation pipeline
-✔ Quantitative + semantic scoring
-✔ Unified configuration
-✔ Replicable scoring logic
-✔ Automatic reports for auditability
+🧱 Extensible Architecture
 
-Companies like OpenAI, Anthropic, DeepMind, and Scale AI all use similar internal frameworks to evaluate models.
-This project gives you a clean, open-source version of that capability.
+Add your own evaluation metric in minutes.
+
+🧪 Dataset Tools
+
+JSON/CSV dataset loaders
+
+Synthetic dataset generation for experiments
 
 🛠️ Installation
 # Clone the repository
@@ -92,28 +101,25 @@ references = [
     "Water boils at 100 degrees Celsius."
 ]
 
-# Initialize default evaluator
+# Initialize evaluator
 evaluator = LLMEvaluator()
 
-# Run batch evaluation
+# Evaluate batch
 results = evaluator.evaluate_batch(predictions, references)
 
-# Print summary in console
+# Print summary
 evaluator.print_summary()
 
 # Save results
-evaluator.save_results(results, "results/evaluation.json")
+evaluator.save_results(results, "data/results/evaluation.json")
 
 📊 Evaluation Metrics
 Metric	Description	Best For
-Exact Match	Normalized string comparison	Factual Q&A
-Fuzzy Match	Levenshtein similarity	Typos, near-match text
-Keyword Match	Coverage of key factual tokens	Factual completeness
-Semantic Similarity	Embedding-based cosine similarity	Paraphrase equivalence
+Exact Match	Normalised string comparison	Factual Q&A
+Fuzzy Match	Levenshtein similarity score	Typos / near-matches
+Keyword Match	Factual token coverage	Content completeness
+Semantic Similarity	Embedding-based cosine similarity	Paraphrasing, meaning
 🏗️ Project Structure
-
-A clean, production-grade repository:
-
 llm-evaluation-toolkit/
 ├── README.md
 ├── CONTRIBUTING.md
@@ -144,6 +150,9 @@ llm-evaluation-toolkit/
 │   ├── test_metrics.py
 │   ├── test_evaluator.py
 │   └── test_datasets.py
+│
+├── docs/images/
+│   └── project_structure.png
 │
 ├── reports/
 └── data/
@@ -178,7 +187,11 @@ output:
 
 🧠 System Architecture
 
+<<<<<<< HEAD
 ![Project Structure](docs/images/project_structure.png)
+=======
+(Replace with a full architecture diagram if desired — I can generate one.)
+>>>>>>> 4cacce4 (docs: rewrite README into world-class documentation)
 
 📈 Sample Output
 Console Summary
@@ -192,36 +205,39 @@ exact_match         : 0.000
 fuzzy_match         : 0.125
 overall             : 0.363
 
-Example Visualization
-![Score Distribution](reports/visualizations/score_distribution.png)
+Example Visualisation
 
-🧪 Testing
+🧪 Running Tests
 python -m pytest tests/
 
 🔮 Roadmap
+Planned Enhancements:
 
-LLM-as-Judge scoring (GPT-4, Claude, Gemini)
+LLM-as-Judge evaluation (GPT-4 / Claude / Gemini)
 
-BLEU, ROUGE, METEOR support
+BLEU / ROUGE / METEOR support
 
-Toxicity & safety classifiers
+Toxicity & safety signal detection
 
-Web dashboard interface
+Web dashboard UI
 
-API endpoints for remote evaluation
-
-Model benchmarking suite
+API endpoints for cloud-based evaluation
 
 HuggingFace integration
 
+Model benchmarking suite
+
+Want to contribute? PRs are welcome!
+
 🤝 Contributing
 
-Contributions are warmly welcome!
-See: CONTRIBUTING.md
+We welcome contributions of all kinds.
+See CONTRIBUTING.md for guidelines.
 
 📄 License
 
-MIT — free to use, modify, and distribute.
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute it.
 
 📚 Citation
 @software{llm_evaluation_toolkit,
@@ -233,5 +249,4 @@ MIT — free to use, modify, and distribute.
 
 ❤️ Built for the AI Research & Engineering Community
 
-This toolkit was created to make LLM evaluation transparent, reproducible, and scientifically rigorous — empowering researchers, engineers, and AI teams to build safer and more reliable systems.
-
+This toolkit exists to make LLM evaluation transparent, reproducible, and scientifically rigorous — empowering anyone to build safer, more reliable AI systems.
