@@ -109,16 +109,7 @@ Keyword Match	Coverage of key factual tokens from reference	Factual completeness
 Semantic Similarity	Cosine similarity of sentence embeddings (Sentence-BERT)	Paraphrasing, meaning preservation	Different phrasing, same meaning → 0.95
 🏗️ Project Architecture
 
-
-
-
-
-
-
-
-
-
-
+![Project Structure](docs/images/project_structure.png)
 
 ---
 
@@ -220,9 +211,6 @@ Metric Correlation (heatmap of metric relationships)
 
 Metric Comparison (box plots across samples)
 
-🧠 System Architecture
-
-![Project Structure](docs/images/project_structure.png)
 
 📈 Sample Visualization: Score Distribution
 
