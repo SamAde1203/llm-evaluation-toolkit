@@ -233,8 +233,5 @@ MIT — free to use, modify, and distribute.
 
 ❤️ Built for the AI Research & Engineering Community
 
-<<<<<<< HEAD
-This toolkit was created to make LLM evaluation transparent, reproducible, and scientifically rigorous.
-=======
-This toolkit was created to make LLM evaluation transparent, reproducible, and scientifically rigorous.
->>>>>>> 2fdf3350003e7eea3b45940b311c65101673152d
+This toolkit was created to make LLM evaluation transparent, reproducible, and scientifically rigorous — empowering researchers, engineers, and AI teams to build safer and more reliable systems.
+
