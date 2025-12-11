@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-11T02:12:56.585726",
+    "total_samples": 8,
+    "metrics_used": [
+      "exact_match",
+      "fuzzy_match",
+      "keyword_match",
+      "semantic_similarity"
+    ]
+  },
+  "per_sample": [
+    {
+      "sample_id": "q1_geography",
+      "prediction": "The capital of France is Paris.",
+      "reference": "Paris is the capital of France.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.6666666666666666,
+        "semantic_similarity": 0.9893566370010376,
+        "overall_score": 0.4301403244336446
+      }
+    },
+    {
+      "sample_id": "q2_science",
+      "prediction": "It depends on the altitude.",
+      "reference": "Water boils at 100\u00b0C at sea level.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.0,
+        "semantic_similarity": 0.3231791853904724,
+        "overall_score": 0.09695375561714172
+      }
+    },
+    {
+      "sample_id": "q3_astronomy",
+      "prediction": "Lunar composition includes rocks, dust, and minerals.",
+      "reference": "The Moon is composed of rock, dust, and various minerals.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.3333333333333333,
+        "semantic_similarity": 0.903668999671936,
+        "overall_score": 0.33776736656824746
+      }
+    },
+    {
+      "sample_id": "q4_literature",
+      "prediction": "Romeo and Juliet was written by William Shakespeare.",
+      "reference": "William Shakespeare wrote Romeo and Juliet.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.6,
+        "semantic_similarity": 0.9371147155761719,
+        "overall_score": 0.40113441467285155
+      }
+    },
+    {
+      "sample_id": "q5_physics",
+      "prediction": "Light travels at about 3 x 10^8 m/s in vacuum.",
+      "reference": "The speed of light in vacuum is approximately 299,792,458 meters per second.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.25,
+        "semantic_similarity": 0.6446351408958435,
+        "overall_score": 0.24339054226875306
+      }
+    },
+    {
+      "sample_id": "q6_astronomy",
+      "prediction": "Jupiter holds the title of biggest planet in our solar system.",
+      "reference": "Jupiter is the largest planet in our solar system.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 1.0,
+        "keyword_match": 0.8333333333333334,
+        "semantic_similarity": 0.9420352578163147,
+        "overall_score": 0.6492772440115611
+      }
+    },
+    {
+      "sample_id": "q7_chemistry",
+      "prediction": "H\u2082O is the formula for water.",
+      "reference": "The chemical formula for water is H\u2082O.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.5,
+        "semantic_similarity": 0.9003264307975769,
+        "overall_score": 0.3700979292392731
+      }
+    },
+    {
+      "sample_id": "q8_art",
+      "prediction": "Da Vinci is the artist behind the Mona Lisa.",
+      "reference": "Leonardo da Vinci painted the Mona Lisa.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.6,
+        "semantic_similarity": 0.8423198461532593,
+        "overall_score": 0.37269595384597776
+      }
+    }
+  ],
+  "aggregate": {
+    "semantic_similarity_mean": 0.8103295266628265,
+    "semantic_similarity_std": 0.2085895356242566,
+    "semantic_similarity_min": 0.3231791853904724,
+    "semantic_similarity_max": 0.9893566370010376,
+    "keyword_match_mean": 0.4729166666666667,
+    "keyword_match_std": 0.24831900126427878,
+    "keyword_match_min": 0.0,
+    "keyword_match_max": 0.8333333333333334,
+    "exact_match_mean": 0.0,
+    "exact_match_std": 0.0,
+    "exact_match_min": 0.0,
+    "exact_match_max": 0.0,
+    "fuzzy_match_mean": 0.125,
+    "fuzzy_match_std": 0.33071891388307384,
+    "fuzzy_match_min": 0.0,
+    "fuzzy_match_max": 1.0,
+    "overall_mean": 0.36268219133218127,
+    "overall_std": 0.14738725080842008,
+    "overall_min": 0.09695375561714172,
+    "overall_max": 0.6492772440115611
+  }
+}

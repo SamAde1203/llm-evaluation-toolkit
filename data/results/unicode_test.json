@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "timestamp": "2025-12-11T02:02:13.880188",
+    "total_samples": 3,
+    "metrics_used": [
+      "exact_match",
+      "fuzzy_match",
+      "keyword_match",
+      "semantic_similarity"
+    ]
+  },
+  "per_sample": [
+    {
+      "sample_id": "sample_0",
+      "prediction": "The chemical formula for water is H\u2082O.",
+      "reference": "Water is H\u2082O.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 1.0,
+        "semantic_similarity": 0.7459551692008972,
+        "overall_score": 0.42378655076026917
+      }
+    },
+    {
+      "sample_id": "sample_1",
+      "prediction": "The speed of light is 3\u00d710\u2078 m/s.",
+      "reference": "Light speed is 3 x 10^8 meters per second.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.3333333333333333,
+        "semantic_similarity": 0.7968837022781372,
+        "overall_score": 0.3057317773501078
+      }
+    },
+    {
+      "sample_id": "sample_2",
+      "prediction": "Temperature can reach -40\u00b0C in winter.",
+      "reference": "Winter temperatures can drop to -40 degrees Celsius.",
+      "scores": {
+        "exact_match": 0.0,
+        "fuzzy_match": 0.0,
+        "keyword_match": 0.42857142857142855,
+        "semantic_similarity": 0.8569015264511108,
+        "overall_score": 0.342784743649619
+      }
+    }
+  ],
+  "aggregate": {
+    "keyword_match_mean": 0.5873015873015873,
+    "keyword_match_std": 0.2944005871585938,
+    "keyword_match_min": 0.3333333333333333,
+    "keyword_match_max": 1.0,
+    "exact_match_mean": 0.0,
+    "exact_match_std": 0.0,
+    "exact_match_min": 0.0,
+    "exact_match_max": 0.0,
+    "fuzzy_match_mean": 0.0,
+    "fuzzy_match_std": 0.0,
+    "fuzzy_match_min": 0.0,
+    "fuzzy_match_max": 0.0,
+    "semantic_similarity_mean": 0.7999134659767151,
+    "semantic_similarity_std": 0.045344298780367984,
+    "semantic_similarity_min": 0.7459551692008972,
+    "semantic_similarity_max": 0.8569015264511108,
+    "overall_mean": 0.357434357253332,
+    "overall_std": 0.04929632011475572,
+    "overall_min": 0.3057317773501078,
+    "overall_max": 0.42378655076026917
+  }
+}
